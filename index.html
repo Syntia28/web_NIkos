@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niko's Pizza - Sabor Auténtico - Pizza a domicilio - Oferta pizza</title>
+
+    <meta name="description"
+        content="Descubre el auténtico sabor de nuestras pizzas artesanales, donde cada mordida refleja tradición y calidad, elaboradas con ingredientes frescos y recetas inspiradas en la pizza napolitana; ofrecemos pizza a domicilio y delivery de pizza rápido para quienes buscan pedir pizza a domicilio, una pizza cerca de mí o una pizza pronto, con opciones como pizza grande, pizza sin gluten, pizza 2x1 y atractiva oferta pizza, convirtiéndonos en una de las pizzerías favoritas de la ciudad frente a alternativas como Domino’s pizza cerca de mí o Pizza Hut promociones, gracias a nuestro estilo mamma mia pizzeria y el sabor único de nuestra hot pizza recién salida del horno. 🍕" />
+    <meta name="keywords"
+        content="pizza a domicilio, pizza pronto, pedir pizza a domicilio, pizza cerca de mí, hot pizza, pala pizza, pizza hut promociones, oferta pizza, pizza grande,pizzerias, delivery de pizza, pizza 2x1" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- redes sociales-->
+    <meta property="og:title" content="Niko's Pizza - Sabor Auténtico - Pizza a domicilio - Oferta pizza" />
+    <meta property="og:description"
+        content="Descubre el auténtico sabor de nuestras pizzas artesanales, donde cada mordida refleja tradición y calidad, elaboradas con ingredientes frescos y recetas inspiradas en la pizza napolitana; ofrecemos pizza a domicilio y delivery de pizza rápido para quienes buscan pedir pizza a domicilio, una pizza cerca de mí o una pizza pronto, con opciones como pizza grande, pizza sin gluten, pizza 2x1 y atractiva oferta pizza, convirtiéndonos en una de las pizzerías favoritas de la ciudad frente a alternativas como Domino’s pizza cerca de mí o Pizza Hut promociones, gracias a nuestro estilo mamma mia pizzeria y el sabor único de nuestra hot pizza recién salida del horno. 🍕" "
+     />
+
+     <link rel=" cononical" href="https://web-nikos.onrender.com/" />
+
+    <link rel="alternate" href="https://web-nikos.onrender.com/" hreflang="es-PE" />
+    <script src="https://cdn.tailwindcss.com" defer></script>
+
+    <script
+        id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/5b43255e31e105aee4e653dfb/f801248f3cf3cdfbd47b9188e.js");</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P55CJWSFWD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P55CJWSFWD');
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --secondary: #fbbf24;
+            --accent: #dc2626;
+            --light: #fef3c7;
+            --dark: #0a0a0a;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2a2a2a 100%);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        .montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .hero-bg {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .hero-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 1.2s ease-in-out;
+        }
+
+        .hero-slide.active {
+            opacity: 1;
+        }
+
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(10, 10, 10, 0.85) 0%, rgba(26, 26, 26, 0.75) 100%);
+        }
+
+        .section-bg {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-pattern {
+            background:
+                radial-gradient(circle at 20% 80%, rgba(251, 191, 36, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(254, 243, 199, 0.05) 0%, transparent 50%);
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-hover-effect {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .card-hover-effect:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(251, 191, 36, 0.15);
+        }
+
+        .hero-button {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+            box-shadow: 0 6px 20px rgba(251, 191, 36, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .hero-button:hover::before {
+            left: 100%;
+        }
+
+        .hero-button:hover {
+            box-shadow: 0 8px 25px rgba(251, 191, 36, 0.4);
+        }
+
+        .text-shadow-glow {
+            text-shadow: 0 0 20px rgba(251, 191, 36, 0.5);
+        }
+
+        .pizza-icon {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-15px) rotate(5deg);
+            }
+
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+        }
+
+        .pizza-slice {
+            position: absolute;
+            opacity: 0.1;
+            z-index: 1;
+            filter: drop-shadow(0 0 10px rgba(251, 191, 36, 0.3));
+        }
+
+        .floating-pizza-1 {
+            top: 10%;
+            left: 5%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-pizza-2 {
+            top: 60%;
+            right: 5%;
+            animation: float 7s ease-in-out infinite 1s;
+        }
+
+        .floating-pizza-3 {
+            bottom: 10%;
+            left: 15%;
+            animation: float 5s ease-in-out infinite 0.5s;
+        }
+
+        .pizza-badge {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pizza-badge::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 50px;
+            height: 50px;
+            background: var(--accent);
+            transform: rotate(45deg);
+            z-index: 1;
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+        }
+
+        .pizza-badge::after {
+            content: '🔥';
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            z-index: 2;
+            font-size: 14px;
+        }
+
+        .menu-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .menu-tab {
+            padding: 0.75rem 1.5rem;
+            margin: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .menu-tab.active {
+            background: var(--secondary);
+            color: var(--primary);
+            border-color: var(--secondary);
+            box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
+        }
+
+        .menu-tab:hover {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        .menu-category {
+            display: none;
+        }
+
+        .menu-category.active {
+            display: grid;
+        }
+
+        .carousel-dots {
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            z-index: 20;
+        }
+
+        .carousel-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .carousel-dot.active {
+            background: var(--secondary);
+            transform: scale(1.3);
+            border-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
+        }
+
+        .floating-element {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(251, 191, 36, 0.1) 0%, transparent 70%);
+            filter: blur(40px);
+            z-index: 0;
+        }
+
+        .floating-1 {
+            width: 300px;
+            height: 300px;
+            top: 10%;
+            right: 10%;
+            animation: float 15s ease-in-out infinite;
+        }
+
+        .floating-2 {
+            width: 200px;
+            height: 200px;
+            bottom: 20%;
+            left: 5%;
+            animation: float 12s ease-in-out infinite reverse;
+        }
+
+        .floating-3 {
+            width: 150px;
+            height: 150px;
+            top: 50%;
+            left: 20%;
+            animation: float 10s ease-in-out infinite 2s;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-divider {
+            height: 3px;
+            background: linear-gradient(90deg, transparent 0%, var(--secondary) 50%, transparent 100%);
+            margin: 4rem auto;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        .pizza-card {
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.9) 0%, rgba(42, 42, 42, 0.9) 100%);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid rgba(251, 191, 36, 0.2);
+        }
+
+        .pizza-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary) 0%, var(--accent) 100%);
+        }
+
+        .social-icon {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-5px) scale(1.1);
+            border-color: var(--secondary);
+            box-shadow: 0 10px 20px rgba(251, 191, 36, 0.2);
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.8) 0%, rgba(42, 42, 42, 0.8) 100%);
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid rgba(251, 191, 36, 0.15);
+        }
+
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(251, 191, 36, 0.05) 0%, transparent 50%);
+            z-index: 0;
+        }
+
+        .pulse-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #10b981;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+            }
+
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+            }
+
+            100% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+            }
+        }
+
+        .hours-card {
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.8) 0%, rgba(42, 42, 42, 0.8) 100%);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid rgba(251, 191, 36, 0.2);
+        }
+
+        .hours-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary) 0%, var(--accent) 100%);
+        }
+    </style>
+    <script
+        id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/5b43255e31e105aee4e653dfb/f801248f3cf3cdfbd47b9188e.js");</script>
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- Header & Nav -->
+    <header
+        class="bg-black/90 backdrop-blur-md fixed w-full top-0 z-50 transition-all duration-300 shadow-lg shadow-yellow-900/20 border-b border-yellow-900/20">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center">
+                <div class="relative">
+                    <img src="imagenes/logoNikos.png" alt="Logo Niko's Pizza"
+                        class="h-16 w-16 rounded-full transition-transform duration-300 hover:scale-110 hover:rotate-6 border-2 border-yellow-500/30">
+                    <div
+                        class="absolute -top-1 -right-1 w-6 h-6 bg-gradient-to-br from-yellow-500 to-red-500 rounded-full flex items-center justify-center shadow-lg">
+                        <span class="text-xs font-bold">🔥</span>
+                    </div>
+                </div>
+                <span class="text-2xl font-black montserrat tracking-wider ml-3 gradient-text">
+                    NIKO'S PIZZA
+                </span>
+            </div>
+
+            <nav class="hidden md:flex space-x-8">
+                <a href="#inicio"
+                    class="hover:text-yellow-400 transition-all duration-300 font-semibold relative group py-2">
+                    Inicio
+                    <span
+                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-500 to-red-500 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#quienes-somos"
+                    class="hover:text-yellow-400 transition-all duration-300 font-semibold relative group py-2">
+                    Quiénes Somos
+                    <span
+                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-500 to-red-500 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#menu"
+                    class="hover:text-yellow-400 transition-all duration-300 font-semibold relative group py-2">
+                    Menú
+                    <span
+                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-500 to-red-500 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#testimonios"
+                    class="hover:text-yellow-400 transition-all duration-300 font-semibold relative group py-2">
+                    Testimonios
+                    <span
+                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-500 to-red-500 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#horarios"
+                    class="hover:text-yellow-400 transition-all duration-300 font-semibold relative group py-2">
+                    Horarios
+                    <span
+                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-500 to-red-500 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#contactos"
+                    class="hover:text-yellow-400 transition-all duration-300 font-semibold relative group py-2">
+                    Contactos
+                    <span
+                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-500 to-red-500 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-2xl focus:outline-none text-yellow-500"
+                aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menú móvil">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black/95 backdrop-blur-lg border-t border-yellow-900/20">
+            <a href="#inicio"
+                class="block text-center py-4 hover:bg-yellow-900/20 hover:text-yellow-400 transition-all duration-300 border-b border-yellow-900/10">Inicio</a>
+            <a href="#quienes-somos"
+                class="block text-center py-4 hover:bg-yellow-900/20 hover:text-yellow-400 transition-all duration-300 border-b border-yellow-900/10">Quiénes
+                Somos</a>
+            <a href="#menu"
+                class="block text-center py-4 hover:bg-yellow-900/20 hover:text-yellow-400 transition-all duration-300 border-b border-yellow-900/10">Menú</a>
+            <a href="#testimonios"
+                class="block text-center py-4 hover:bg-yellow-900/20 hover:text-yellow-400 transition-all duration-300 border-b border-yellow-900/10">Testimonios</a>
+            <a href="#horarios"
+                class="block text-center py-4 hover:bg-yellow-900/20 hover:text-yellow-400 transition-all duration-300 border-b border-yellow-900/10">Horarios</a>
+            <a href="#contactos"
+                class="block text-center py-4 hover:bg-yellow-900/20 hover:text-yellow-400 transition-all duration-300">Contactos</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero Section con Carrusel -->
+        <section id="inicio" class="hero-bg flex items-center justify-center text-center relative">
+            <!-- Elementos flotantes de fondo -->
+            <div class="floating-element floating-1"></div>
+            <div class="floating-element floating-2"></div>
+            <div class="floating-element floating-3"></div>
+
+            <!-- Carrusel de imágenes -->
+            <div class="hero-slide active"
+                style="background-image: url('https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+            </div>
+            <div class="hero-slide"
+                style="background-image: url('https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80')">
+            </div>
+            <div class="hero-slide"
+                style="background-image: url('https://images.unsplash.com/photo-1595708684082-a173bb3a06c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1946&q=80')">
+            </div>
+            <div class="hero-slide"
+                style="background-image: url('https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80')">
+            </div>
+
+            <!-- Overlay y contenido -->
+            <div class="hero-overlay absolute inset-0 z-10"></div>
+
+            <div class="pizza-slice floating-pizza-1 text-6xl z-10">🍕</div>
+            <div class="pizza-slice floating-pizza-2 text-8xl z-10">🍕</div>
+            <div class="pizza-slice floating-pizza-3 text-5xl z-10">🍕</div>
+
+            <div data-aos="zoom-in" data-aos-duration="1000" class="relative z-20 px-4">
+                <h1 class="text-5xl md:text-8xl font-black montserrat uppercase tracking-wider text-shadow-glow mb-6">
+                    NIKO'S PIZZA
+                </h1>
+                <p class="text-xl md:text-2xl mt-4 text-yellow-100 font-light max-w-2xl mx-auto mb-8">Descubre el
+                    auténtico
+                    sabor de las pizzas artesanales que su gran sabor se siente en cada mordida. Hechas con ingredientes
+                    frescos y amor por la tradición.</p>
+                <div class="mt-8 flex flex-col md:flex-row justify-center gap-6">
+                    <a href="#menu"
+                        class="inline-block text-black font-bold py-4 px-10 rounded-full uppercase tracking-wider transition-all duration-300 transform hover:scale-105 hero-button text-lg">
+                        Ver Menú
+                    </a>
+                    <a href="#contactos"
+                        class="inline-block bg-transparent border-2 border-yellow-500 text-white font-bold py-4 px-10 rounded-full uppercase tracking-wider transition-all duration-300 transform hover:scale-105 hover:bg-yellow-500 hover:text-black">
+                        Pedir Ahora
+                    </a>
+                </div>
+            </div>
+
+            <!-- Indicadores del carrusel -->
+            <div class="carousel-dots">
+                <div class="carousel-dot active" data-slide="0"></div>
+                <div class="carousel-dot" data-slide="1"></div>
+                <div class="carousel-dot" data-slide="2"></div>
+                <div class="carousel-dot" data-slide="3"></div>
+            </div>
+
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce z-20">
+                <a href="#quienes-somos" class="text-3xl text-yellow-400"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </section>
+
+        <!-- Quienes Somos Section -->
+        <section id="quienes-somos" class="section-bg section-pattern py-24 relative">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-black montserrat mb-8 text-center gradient-text"
+                    data-aos="fade-up">Nuestra Pasión
+                    por la Pizza</h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div data-aos="fade-right">
+                        <div class="glass-effect rounded-2xl p-8 mb-8">
+                            <h3 class="text-2xl font-bold montserrat mb-4 gradient-text">Desde 2021</h3>
+                            <p class="text-lg text-gray-200 leading-relaxed">
+                                En Niko's Pizza, la pasión por la pizza es nuestro ingrediente principal. Hemos horneado
+                                las pizzas más deliciosas de la ciudad, combinando recetas tradicionales con un toque de
+                                innovación.
+                            </p>
+                        </div>
+
+                        <div class="glass-effect rounded-2xl p-8">
+                            <h3 class="text-2xl font-bold montserrat mb-4 gradient-text">Ingredientes de Calidad</h3>
+                            <p class="text-lg text-gray-200 leading-relaxed">
+                                Usamos solo los ingredientes más frescos y de la más alta calidad para que cada mordida
+                                sea una experiencia inolvidable. Nuestra masa se prepara diariamente con harina italiana
+                                premium.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-left" class="relative">
+                        <div class="rounded-2xl overflow-hidden shadow-2xl border-2 border-yellow-500/20">
+                            <img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                                alt="Chef de Niko's Pizza" class="w-full h-auto">
+                        </div>
+                        <div
+                            class="absolute -bottom-6 -right-6 bg-gradient-to-r from-yellow-500 to-red-500 text-white p-6 rounded-2xl shadow-2xl">
+                            <p class="text-xl font-bold montserrat">"La pizza perfecta requiere tiempo, paciencia y
+                                mucho amor"</p>
+                            <p class="mt-2 text-yellow-100 font-semibold">- Chef Hugo G.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center glass-effect rounded-2xl p-6 card-hover-effect">
+                        <div class="text-4xl text-yellow-400 mb-4"><i class="fas fa-award"></i></div>
+                        <h3 class="text-xl font-bold montserrat mb-2">Calidad Premium</h3>
+                        <p class="text-gray-300">Ingredientes seleccionados cuidadosamente para garantizar el mejor
+                            sabor.</p>
+                    </div>
+
+                    <div class="text-center glass-effect rounded-2xl p-6 card-hover-effect">
+                        <div class="text-4xl text-yellow-400 mb-4"><i class="fas fa-fire"></i></div>
+                        <h3 class="text-xl font-bold montserrat mb-2">Horneado Tradicional</h3>
+                        <p class="text-gray-300">Nuestras pizzas se hornean en horno de leña para un sabor auténtico.
+                        </p>
+                    </div>
+
+                    <div class="text-center glass-effect rounded-2xl p-6 card-hover-effect">
+                        <div class="text-4xl text-yellow-400 mb-4"><i class="fas fa-heart"></i></div>
+                        <h3 class="text-xl font-bold montserrat mb-2">Hecho con Amor</h3>
+                        <p class="text-gray-300">Cada pizza se prepara con dedicación y pasión por la cocina italiana.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="section-bg section-pattern py-24 relative">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-black montserrat text-center mb-4 gradient-text"
+                    data-aos="fade-up">
+                    Nuestro Menú Estrella
+                </h2>
+                <p class="text-xl text-center mb-12 max-w-2xl mx-auto text-gray-300" data-aos="fade-up"
+                    data-aos-delay="100">Descubre nuestras especialidades, creadas para satisfacer todos los paladares
+                </p>
+
+                <div class="menu-tabs" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-tab active" data-category="pizzas">Pizzas</div>
+                    <div class="menu-tab" data-category="bebidas">Bebidas</div>
+                    <div class="menu-tab" data-category="combos">Combos</div>
+                </div>
+
+                <div class="menu-category active" id="pizzas">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Pizza Card 1 -->
+                        <div class="pizza-card overflow-hidden card-hover-effect relative pizza-badge"
+                            data-aos="fade-up">
+                            <div class="overflow-hidden">
+                                <img src="imagenes/nikos.png" alt="pizza a domicilio, pizza pronto"
+                                    class="w-full h-60 object-cover transform hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold montserrat mb-3">Pizza niko´s</h3>
+                                <p class="text-gray-300 mb-4">La favorita de todos. Cubierta generosamente con
+                                    ingredientes especiales de la casa,
+                                    de primera y queso mozzarella derretido.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-bold text-yellow-400">S/.35.00</span>
+                                    <a href="https://wa.me/+51902942699?text=Hola,%20deseo%20adquirir%20una%20pizza%20de%20Niko%27s%20Pizza."
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="bg-gradient-to-r from-yellow-500 to-red-500 hover:from-yellow-600 hover:to-red-600 text-white py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105">
+                                        Comprar por Whatsapp
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pizza Card 2 -->
+                        <div class="pizza-card overflow-hidden card-hover-effect" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <div class="overflow-hidden">
+                                <img src="imagenes/hawaina.png"
+                                    alt="Pizza Hawaiana, pedir pizza a domicilio, pizza cerca de mí"
+                                    class="w-full h-60 object-cover transform hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold montserrat mb-3">Pizza Hawaiana</h3>
+                                <p class="text-gray-300 mb-4">Una mezcla tropical de jamón jugoso y piña dulce que te
+                                    transportará al paraíso.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-bold text-yellow-400">S/.29.00</span>
+                                    <a href="https://wa.me/+51902942699?text=Hola,%20deseo%20adquirir%20una%20pizza%20de%20Niko%27s%20Pizza."
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="bg-gradient-to-r from-yellow-500 to-red-500 hover:from-yellow-600 hover:to-red-600 text-white py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105">
+                                        Comprar por Whatsapp
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pizza Card 3 -->
+                        <div class="pizza-card overflow-hidden card-hover-effect" data-aos="fade-up"
+                            data-aos-delay="400">
+                            <div class="overflow-hidden">
+                                <img src="imagenes/superNikos.jpg" alt="Pizza grande, pizzerias"
+                                    class="w-full h-60 object-cover transform hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold montserrat mb-3">Super Niko´s</h3>
+                                <p class="text-gray-300 mb-4">Una delicia saludable con ingrediente y el sabor unico de
+                                    Niko´s: pimientos,
+                                    champiñones, aceitunas,etc y nuestro toque secreto. </p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-bold text-yellow-400">S/.40.00</span>
+                                    <a href="https://wa.me/+51902942699?text=Hola,%20deseo%20adquirir%20una%20pizza%20de%20Niko%27s%20Pizza."
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="bg-gradient-to-r from-yellow-500 to-red-500 hover:from-yellow-600 hover:to-red-600 text-white py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105">
+                                        Comprar por Whatsapp
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bebidas Category -->
+            <div class="menu-category" id="bebidas">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Bebida Card 1: Gaseosa Personal -->
+                    <div class="pizza-card overflow-hidden card-hover-effect" data-aos="fade-up">
+                        <div class="overflow-hidden h-60 flex items-center justify-center p-4">
+                            <img src="imagenes/gaseosaPersonal.png" alt="Gaseosa Personal"
+                                class="max-h-full w-auto object-contain transform hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="text-2xl font-bold montserrat mb-3">Gaseosa Personal</h3>
+                            <p class="text-gray-300 mb-4 h-16">Refrescante bebida individual. Elige tu favorita:
+                                Coca-Cola, Inca Kola, Fanta, Sprite.</p>
+                            <div class="flex flex-col items-center justify-center space-y-4">
+                                <span class="text-2xl font-bold text-yellow-400">S/.2.00</span>
+                                <a href="https://wa.me/+51902942699?text=Hola,%20quisiera%20ordenar%20una%20Gaseosa%20Personal."
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="bg-gradient-to-r from-yellow-500 to-red-500 hover:from-yellow-600 hover:to-red-600 text-white py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105">
+                                    Comprar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bebida Card 2: Gaseosa 1.5L -->
+                    <div class="pizza-card overflow-hidden card-hover-effect" data-aos="fade-up" data-aos-delay="200">
+                        <div class="overflow-hidden h-60 flex items-center justify-center p-4">
+                            <img src="https://polleriaslagranja.com/wp-content/uploads/2022/10/La-Granja-Real-Food-Chicken-Gaseosa-Personal.png"
+                                alt="Gaseosa 1.5L"
+                                class="max-h-full w-auto object-contain transform hover:scale-110 transition-transform duration-500 scale-125">
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="text-2xl font-bold montserrat mb-3">Gaseosa de 1.5L</h3>
+                            <p class="text-gray-300 mb-4 h-16">Ideal para compartir en familia. Sabores: Coca-Cola, Inca
+                                Kola.</p>
+                            <div class="flex flex-col items-center justify-center space-y-4">
+                                <span class="text-2xl font-bold text-yellow-400">S/.8.00</span>
+                                <a href="https://wa.me/+51902942699?text=Hola,%20quisiera%20ordenar%20una%20Gaseosa%20de%201.5L."
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="bg-gradient-to-r from-yellow-500 to-red-500 hover:from-yellow-600 hover:to-red-600 text-white py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105">
+                                    Comprar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bebida Card 3: Jugo de Piña -->
+                    <div class="pizza-card overflow-hidden card-hover-effect" data-aos="fade-up" data-aos-delay="400">
+                        <div class="overflow-hidden h-60 flex items-center justify-center p-4">
+                            <img src="imagenes/pinia.jpeg" alt="Jugo de piña"
+                                class="h-full w-full object-cover transform hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="text-2xl font-bold montserrat mb-3">Jugo de Piña</h3>
+                            <p class="text-gray-300 mb-4 h-16">Natural y refrescante, preparado con las piñas más
+                                frescas de la región.</p>
+                            <div class="flex flex-col items-center justify-center space-y-4">
+                                <span class="text-2xl font-bold text-yellow-400">S/.10.00</span>
+                                <a href="https://wa.me/+51902942699?text=Hola,%20quisiera%20ordenar%20un%20Jugo%20de%20Pi%C3%B1a."
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="bg-gradient-to-r from-yellow-500 to-red-500 hover:from-yellow-600 hover:to-red-600 text-white py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105">
+                                    Comprar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bebida Card 4: Agua Mineral -->
+                    <div class="pizza-card overflow-hidden card-hover-effect" data-aos="fade-up" data-aos-delay="600">
+                        <div class="overflow-hidden h-60 flex items-center justify-center p-4 bg-gray-200">
+                            <img src="https://cdnespecial.elcomercio.pe/wp-content/uploads/sites/183/2023/08/san-luis_jalador_nota_branded.png"
+                                alt="Agua Mineral"
+                                class="max-h-full w-auto object-contain transform hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="text-2xl font-bold montserrat mb-3">Agua Mineral</h3>
+                            <p class="text-gray-300 mb-4 h-16">Mantente hidratado. Disponible con o sin gas para tu
+                                preferencia.</p>
+                            <div class="flex flex-col items-center justify-center space-y-4">
+                                <span class="text-2xl font-bold text-yellow-400">S/.2.50</span>
+                                <a href="https://wa.me/+51902942699?text=Hola,%20quisiera%20ordenar%20Agua%20Mineral."
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="bg-gradient-to-r from-yellow-500 to-red-500 hover:from-yellow-600 hover:to-red-600 text-white py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105">
+                                    Comprar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Combos Category -->
+            <div class="menu-category" id="combos">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Combo Card 1: Combo Personal -->
+                    <div class="pizza-card overflow-hidden card-hover-effect" data-aos="fade-up">
+                        <div class="overflow-hidden">
+                            <img src="imagenes/combo13.png" alt="Combo Personal"
+                                class="w-full h-60 object-cover transform hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold montserrat mb-3">Super COmbo</h3>
+                            <p class="text-gray-300 mb-4 h-24">2 pizzas Famillares (hawaina, española peperoni,
+                                americana o cabanossi) + porcion de pan al ajo por:</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-yellow-400">S/.55.00</span>
+                                <a href="https://wa.me/+51902942699?text=Hola,%20deseo%20adquirir%20el%20Combo%20Personal."
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="bg-gradient-to-r from-yellow-500 to-red-500 hover:from-yellow-600 hover:to-red-600 text-white py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105">
+                                    Comprar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Combo Card 2: Combo Corazón -->
+                    <div class="pizza-card overflow-hidden card-hover-effect" data-aos="fade-up" data-aos-delay="200">
+                        <div class="overflow-hidden">
+                            <img src="imagenes/combo12.png" alt="Combo Corazón"
+                                class="w-full h-60 object-cover transform hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold montserrat mb-3">Combo Lasaña</h3>
+                            <p class="text-gray-300 mb-4 h-24">Perfecto para dos. Incluye 1: una lasaña de carne +
+                                gaseoa de 500 ml.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-yellow-400">S/.45.00</span>
+                                <a href="https://wa.me/+51902942699?text=Hola,%20deseo%20adquirir%20el%20Combo%20Coraz%C3%B3n."
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="bg-gradient-to-r from-yellow-500 to-red-500 hover:from-yellow-600 hover:to-red-600 text-white py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105">
+                                    Comprar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Combo Card 3: Combo Familiar -->
+                    <div class="pizza-card overflow-hidden card-hover-effect" data-aos="fade-up" data-aos-delay="400">
+                        <div class="overflow-hidden">
+                            <img src="imagenes/comboNIkos.png" alt="Combo Familiar"
+                                class="w-full h-60 object-cover transform hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold montserrat mb-3">Combo Familiar</h3>
+                            <p class="text-gray-300 mb-4 h-24">Para todos. Incluye 2 Pizzas familiares (Niko´s o Super
+                                Niko´s)</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-yellow-400">S/.70.00</span>
+                                <a href="https://wa.me/+51902942699?text=Hola,%20deseo%20adquirir%20el%20Combo%20Familiar."
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="bg-gradient-to-r from-yellow-500 to-red-500 hover:from-yellow-600 hover:to-red-600 text-white py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105">
+                                    Comprar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12" data-aos="fade-up">
+                <a href="https://www.canva.com/design/DAGvdSJp2Dk/MNP1sYQr49TeJqxIo8YtNg/view" target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-block bg-gradient-to-r from-yellow-500 to-red-500 text-white font-bold py-3 px-8 rounded-full uppercase tracking-wider transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                    Ver Menú Completo
+                </a>
+            </div>
+            </div>
+        </section>
+
+        <!-- Testimonios Section -->
+        <section id="testimonios" class="section-bg section-pattern py-24 relative">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl md:text-5xl font-black montserrat text-center mb-4 gradient-text">
+                        Lo que Dicen Nuestros Clientes
+                    </h2>
+                    <p class="text-xl text-center max-w-2xl mx-auto text-gray-300" data-aos="fade-up"
+                        data-aos-delay="100">
+                        Miles de clientes satisfechos disfrutan de nuestras deliciosas pizzas cada día
+                    </p>
+                </div>
+
+                <!-- Testimonios Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonio 1 -->
+                    <div class="glass-effect rounded-2xl p-8 card-hover-effect" data-aos="fade-up">
+                        <div class="flex items-start mb-4">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-14 w-14 rounded-full bg-gradient-to-br from-yellow-400 to-red-500">
+                                    <span class="text-2xl font-bold text-white">MP</span>
+                                </div>
+                            </div>
+                            <div class="ml-4 flex-1">
+                                <h3 class="text-lg font-bold text-white">María Pérez</h3>
+                                <div class="flex items-center mt-1">
+                                    <span class="text-yellow-400">★★★★★</span>
+                                    <span class="text-sm text-gray-400 ml-2">5.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed">
+                            "¡Excelente pizza! La masa está perfecta, crujiente por fuera y suave por dentro. Los ingredientes son de primera calidad y el servicio muy rápido. ¡Volveré sin dudarlo!"
+                        </p>
+                        <div class="mt-4 flex items-center text-sm text-gray-400">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            Hace 2 semanas
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 2 -->
+                    <div class="glass-effect rounded-2xl p-8 card-hover-effect" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-start mb-4">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-14 w-14 rounded-full bg-gradient-to-br from-yellow-400 to-red-500">
+                                    <span class="text-2xl font-bold text-white">CR</span>
+                                </div>
+                            </div>
+                            <div class="ml-4 flex-1">
+                                <h3 class="text-lg font-bold text-white">Carlos Ramírez</h3>
+                                <div class="flex items-center mt-1">
+                                    <span class="text-yellow-400">★★★★★</span>
+                                    <span class="text-sm text-gray-400 ml-2">5.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed">
+                            "La Pizza Niko's es mi favorita sin duda. El sabor es único, definitivamente tienen un toque especial. Ordeno casi cada fin de semana y nunca me decepcionan."
+                        </p>
+                        <div class="mt-4 flex items-center text-sm text-gray-400">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            Hace 3 días
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 3 -->
+                    <div class="glass-effect rounded-2xl p-8 card-hover-effect" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-start mb-4">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-14 w-14 rounded-full bg-gradient-to-br from-yellow-400 to-red-500">
+                                    <span class="text-2xl font-bold text-white">LG</span>
+                                </div>
+                            </div>
+                            <div class="ml-4 flex-1">
+                                <h3 class="text-lg font-bold text-white">Laura González</h3>
+                                <div class="flex items-center mt-1">
+                                    <span class="text-yellow-400">★★★★★</span>
+                                    <span class="text-sm text-gray-400 ml-2">5.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed">
+                            "Pizzas increíbles con ingredientes frescos. El delivery fue rápido y la pizza llegó caliente. 100% recomendado. He traído a mis amigas y todas amaron!"
+                        </p>
+                        <div class="mt-4 flex items-center text-sm text-gray-400">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            Hace 1 semana
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 4 -->
+                    <div class="glass-effect rounded-2xl p-8 card-hover-effect" data-aos="fade-up" data-aos-delay="300">
+                        <div class="flex items-start mb-4">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-14 w-14 rounded-full bg-gradient-to-br from-yellow-400 to-red-500">
+                                    <span class="text-2xl font-bold text-white">JM</span>
+                                </div>
+                            </div>
+                            <div class="ml-4 flex-1">
+                                <h3 class="text-lg font-bold text-white">Juan Morales</h3>
+                                <div class="flex items-center mt-1">
+                                    <span class="text-yellow-400">★★★★★</span>
+                                    <span class="text-sm text-gray-400 ml-2">5.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed">
+                            "Superé mis expectativas. Pedí para una reunión familiar y todos quedaron maravillados. La relación precio-calidad es excelente. ¡Felicidades al equipo!"
+                        </p>
+                        <div class="mt-4 flex items-center text-sm text-gray-400">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            Hace 4 días
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 5 -->
+                    <div class="glass-effect rounded-2xl p-8 card-hover-effect" data-aos="fade-up" data-aos-delay="400">
+                        <div class="flex items-start mb-4">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-14 w-14 rounded-full bg-gradient-to-br from-yellow-400 to-red-500">
+                                    <span class="text-2xl font-bold text-white">SF</span>
+                                </div>
+                            </div>
+                            <div class="ml-4 flex-1">
+                                <h3 class="text-lg font-bold text-white">Sofia Fernández</h3>
+                                <div class="flex items-center mt-1">
+                                    <span class="text-yellow-400">★★★★★</span>
+                                    <span class="text-sm text-gray-400 ml-2">5.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed">
+                            "Mejor que las cadenas grandes. Aquí sí se nota que es artesanal y hecha con amor. El queso mozzarella es de excelente calidad. Muy recomendado!"
+                        </p>
+                        <div class="mt-4 flex items-center text-sm text-gray-400">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            Hace 5 días
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 6 -->
+                    <div class="glass-effect rounded-2xl p-8 card-hover-effect" data-aos="fade-up" data-aos-delay="500">
+                        <div class="flex items-start mb-4">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-14 w-14 rounded-full bg-gradient-to-br from-yellow-400 to-red-500">
+                                    <span class="text-2xl font-bold text-white">DC</span>
+                                </div>
+                            </div>
+                            <div class="ml-4 flex-1">
+                                <h3 class="text-lg font-bold text-white">Diego Castillo</h3>
+                                <div class="flex items-center mt-1">
+                                    <span class="text-yellow-400">★★★★★</span>
+                                    <span class="text-sm text-gray-400 ml-2">5.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed">
+                            "¡Pizzas deliciosas! He probado varias variedades y todas están excelentes. La atención rápida, delivery puntual y la calidad nunca falla. Los mejores!"
+                        </p>
+                        <div class="mt-4 flex items-center text-sm text-gray-400">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            Hace 6 días
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Section -->
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8" data-aos="fade-up">
+                    <div class="text-center glass-effect rounded-2xl p-8 card-hover-effect">
+                        <div class="text-4xl font-black text-yellow-400 mb-2">4.9★</div>
+                        <h3 class="text-xl font-bold montserrat mb-2">Calificación Promedio</h3>
+                        <p class="text-gray-300">Basado en 500+ opiniones verificadas</p>
+                    </div>
+
+                    <div class="text-center glass-effect rounded-2xl p-8 card-hover-effect">
+                        <div class="text-4xl font-black text-red-500 mb-2">2,500+</div>
+                        <h3 class="text-xl font-bold montserrat mb-2">Clientes Felices</h3>
+                        <p class="text-gray-300">Que disfrutan nuestras pizzas cada mes</p>
+                    </div>
+
+                    <div class="text-center glass-effect rounded-2xl p-8 card-hover-effect">
+                        <div class="text-4xl font-black text-yellow-400 mb-2">98%</div>
+                        <h3 class="text-xl font-bold montserrat mb-2">Recomendación</h3>
+                        <p class="text-gray-300">Clientes que nos volverían a elegir</p>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="text-center mt-12" data-aos="fade-up">
+                    <p class="text-gray-300 mb-6 text-lg">¿Listo para probar nuestras pizzas?</p>
+                    <a href="https://wa.me/+51902942699?text=Hola,%20deseo%20adquirir%20una%20pizza%20de%20Niko%27s%20Pizza."
+                        target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center bg-gradient-to-r from-yellow-500 to-red-500 text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                        <i class="fab fa-whatsapp mr-3 text-xl"></i>
+                        Hacer Pedido Ahora
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Horarios Section -->
+        <section id="horarios" class="section-bg section-pattern py-24 relative">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-black montserrat text-center mb-8 gradient-text"
+                    data-aos="fade-up">Horarios de
+                    Atención</h2>
+
+                <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div data-aos="fade-right">
+                        <div class="hours-card p-8 rounded-2xl shadow-lg mb-8">
+                            <h3 class="text-2xl font-bold montserrat mb-6 text-center gradient-text">Horario Regular
+                            </h3>
+                            <div class="space-y-4">
+                                <div class="flex justify-between items-center border-b border-yellow-500/20 pb-4">
+                                    <span class="text-lg">Lunes a Jueves</span>
+                                    <span class="text-lg font-bold text-yellow-400">5:30 PM - 10:00 PM</span>
+                                </div>
+                                <div class="flex justify-between items-center border-b border-yellow-500/20 pb-4">
+                                    <span class="text-lg">Viernes y Sábado</span>
+                                    <span class="text-lg font-bold text-yellow-400">5:30 PM - 12:00 AM</span>
+                                </div>
+                                <div class="flex justify-between items-center pt-2">
+                                    <span class="text-lg">Domingos</span>
+                                    <span class="text-lg font-bold text-yellow-400">No realizamos atención</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-left">
+                        <div class="hours-card p-8 rounded-2xl shadow-lg">
+                            <h3 class="text-2xl font-bold montserrat mb-6 text-center gradient-text">Servicio a
+                                Domicilio</h3>
+                            <div class="space-y-4">
+                                <div class="flex justify-between items-center border-b border-yellow-500/20 pb-4">
+                                    <span class="text-lg">Lunes a Sábado</span>
+                                    <span class="text-lg font-bold text-yellow-400">5:30 PM - 10:00 PM</span>
+                                </div>
+                                <div class="text-center mt-6">
+                                    <p class="text-gray-300 mb-4">¿Tienes un evento especial?</p>
+                                    <a href="#contactos"
+                                        class="inline-block bg-gradient-to-r from-yellow-500 to-red-500 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105">
+                                        Contáctanos
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center" data-aos="fade-up">
+                    <div class="inline-flex items-center glass-effect px-6 py-3 rounded-full">
+                        <span class="text-xl mr-3">🚚</span>
+                        <span class="text-lg">Envío gratis en pedidos superiores a S/80</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contactos Section -->
+        <section id="contactos" class="section-bg section-pattern py-24 relative">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-black montserrat text-center mb-16 gradient-text"
+                    data-aos="fade-up">Ponte en
+                    Contacto</h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div data-aos="fade-right">
+                        <h3 class="text-2xl font-bold montserrat mb-6 gradient-text">Envíanos un mensaje</h3>
+
+
+
+                        <div class="text-center mt-8">
+                            <p class="text-gray-300 mb-4">¿Listo para ordenar?</p>
+                            <a href="https://wa.me/+51902942699?text=Hola,%20deseo%20adquirir%20una%20pizza%20de%20Niko%27s%20Pizza."
+                                target="_blank" rel="noopener noreferrer"
+                                class="inline-flex items-center bg-gradient-to-r from-green-500 to-green-600 text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                                <i class="fab fa-whatsapp mr-3 text-2xl"></i>
+                                Ordenar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-left">
+                        <h3 class="text-2xl font-bold montserrat mb-6 text-white">Información de contacto</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Teléfono -->
+                            <div class="contact-card p-6 card-hover-effect group">
+                                <div class="flex items-start">
+                                    <div class="relative">
+                                        <div
+                                            class="rounded-2xl bg-gradient-to-br from-yellow-500 to-yellow-700 h-16 w-16 flex items-center justify-center text-2xl shadow-lg shadow-yellow-500/30 group-hover:scale-110 transition-transform duration-300">
+                                            <i class="fas fa-phone text-white"></i>
+                                        </div>
+                                        <div
+                                            class="absolute -top-2 -right-2 w-6 h-6 bg-green-400 rounded-full flex items-center justify-center">
+                                            <div class="pulse-dot"></div>
+                                        </div>
+                                    </div>
+                                    <div class="ml-4 flex-1">
+                                        <h4 class="text-xl font-bold montserrat text-white mb-2">Llámanos</h4>
+                                        <a href="tel:+51902942699"
+                                            class="text-lg font-semibold text-gray-200 hover:text-white transition-colors duration-300 hover:underline flex items-center">
+                                            +51 902 942 699
+                                            <i
+                                                class="fas fa-arrow-right ml-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+                                        </a>
+                                        <p class="text-sm text-gray-400 mt-1">Disponible 24/7 para pedidos</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Ubicación -->
+                            <div class="contact-card p-6 card-hover-effect group">
+                                <div class="flex items-start">
+                                    <div
+                                        class="rounded-2xl bg-gradient-to-br from-yellow-500 to-yellow-600 h-16 w-16 flex items-center justify-center text-2xl shadow-lg shadow-yellow-500/30 group-hover:scale-110 transition-transform duration-300">
+                                        <i class="fas fa-map-marker-alt text-white"></i>
+                                    </div>
+                                    <div class="ml-4 flex-1">
+                                        <h4 class="text-xl font-bold montserrat text-white mb-2">Visítanos</h4>
+                                        <p class="text-lg font-semibold text-gray-200">Jr. Reyna Farge N° 175</p>
+                                        <p class="text-sm text-gray-400 mt-1">Cajamarca, Perú</p>
+                                        <button
+                                            class="mt-3 text-sm text-yellow-400 hover:text-yellow-300 transition-colors duration-300 flex items-center group">
+                                            Ver en mapa
+                                            <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="contact-card p-6 card-hover-effect group">
+                                <div class="flex items-start">
+                                    <div
+                                        class="rounded-2xl bg-gradient-to-br from-yellow-600 to-yellow-800 h-16 w-16 flex items-center justify-center text-2xl shadow-lg shadow-yellow-600/30 group-hover:scale-110 transition-transform duration-300">
+                                        <i class="fas fa-envelope text-white"></i>
+                                    </div>
+                                    <div class="ml-4 flex-1">
+                                        <h4 class="text-xl font-bold montserrat text-white mb-2">Escríbenos</h4>
+                                        <a href="mailto:nikospizzacajamarca@gmail.com"
+                                            class="text-lg font-semibold text-gray-200 hover:text-white transition-colors duration-300 hover:underline break-all flex items-center">
+                                            nikospizzacajamarca@gmail.com
+                                            <i
+                                                class="fas fa-arrow-right ml-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+                                        </a>
+                                        <p class="text-sm text-gray-400 mt-1">Respondemos en menos de 2 horas</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- WhatsApp -->
+                            <div class="contact-card p-6 card-hover-effect group">
+                                <div class="flex items-start">
+                                    <div class="relative">
+                                        <div
+                                            class="rounded-2xl bg-gradient-to-br from-green-500 to-green-600 h-16 w-16 flex items-center justify-center text-2xl shadow-lg shadow-green-500/30 group-hover:scale-110 transition-transform duration-300">
+                                            <i class="fab fa-whatsapp text-white"></i>
+                                        </div>
+                                        <div
+                                            class="absolute -top-2 -right-2 w-6 h-6 bg-white rounded-full flex items-center justify-center animate-bounce">
+                                            <span class="text-xs font-bold text-green-600">💬</span>
+                                        </div>
+                                    </div>
+                                    <div class="ml-4 flex-1">
+                                        <h4 class="text-xl font-bold montserrat text-white mb-2">WhatsApp</h4>
+                                        <a href="https://wa.me/+51902942699?text=Hola,%20deseo%20adquirir%20una%20pizza%20de%20Niko%27s%20Pizza."
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="text-lg font-semibold text-gray-200 hover:text-white transition-colors duration-300 hover:underline flex items-center">
+                                            +51 902 942 699
+                                            <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                                        </a>
+                                        <p class="text-sm text-gray-400 mt-1">Pedidos rápidos y atención inmediata</p>
+                                        <div class="mt-3">
+                                            <span
+                                                class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-900/50 text-green-300">
+                                                <i class="fas fa-bolt mr-1"></i>
+                                                Respuesta instantánea
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <h4 class="text-xl font-bold montserrat mb-4">Síguenos en redes sociales</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.facebook.com/share/1C61AjfQr9/" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="social-icon glass-effect rounded-full h-12 w-12 flex items-center justify-center text-xl text-white">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/nikospizzacajamarca?igsh=YXoyNzV0OTdyaXJs"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="social-icon glass-effect rounded-full h-12 w-12 flex items-center justify-center text-xl text-white">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@nikospizza_cajamarca?_r=1&_t=ZS-91P6G5tqiPZ"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="social-icon glass-effect rounded-full h-12 w-12 flex items-center justify-center text-xl text-white">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black/90 backdrop-blur-lg py-12 border-t border-yellow-900/20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-black montserrat mb-4 gradient-text">
+                        NIKO'S PIZZA
+                    </h3>
+                    <p class="text-gray-400">Su gran sabor se siente en cada mordida. Desde 2021 sirviendo las mejores
+                        pizzas de la ciudad.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold montserrat mb-4 text-yellow-400">Enlaces Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio"
+                                class="text-gray-400 hover:text-yellow-400 transition-colors duration-300">Inicio</a>
+                        </li>
+                        <li><a href="#menu"
+                                class="text-gray-400 hover:text-yellow-400 transition-colors duration-300">Menú</a></li>
+                        <li><a href="#testimonios"
+                                class="text-gray-400 hover:text-yellow-400 transition-colors duration-300">Testimonios</a></li>
+                        <li><a href="#horarios"
+                                class="text-gray-400 hover:text-yellow-400 transition-colors duration-300">Horarios</a>
+                        </li>
+                        <li><a href="#contactos"
+                                class="text-gray-400 hover:text-yellow-400 transition-colors duration-300">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold montserrat mb-4 text-yellow-400">Políticas</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-yellow-400 transition-colors duration-300">Términos y
+                                Condiciones</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-yellow-400 transition-colors duration-300">Política de
+                                Privacidad</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-yellow-400 transition-colors duration-300">Política de
+                                Cookies</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold montserrat mb-4 text-yellow-400">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Suscríbete para recibir ofertas exclusivas</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Tu email"
+                            class="bg-gray-800/50 text-white px-4 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 w-full border border-yellow-500/30">
+                        <button
+                            class="bg-gradient-to-r from-yellow-500 to-red-500 text-white px-4 py-2 rounded-r-lg hover:opacity-90 transition-opacity duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-yellow-900/20 mt-8 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 Niko's Pizza. Todos los derechos reservados. Diseñado con ❤️ y 🍕.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script>
+        // Safe initialization for AOS and other UI scripts.
+        (function () {
+            // Initialize AOS when available; if not yet loaded, initialize on window.load
+            function initAOS() {
+                if (window.AOS && typeof window.AOS.init === 'function') {
+                    window.AOS.init({ once: true, duration: 800 });
+                }
+            }
+
+            if (window.AOS) {
+                initAOS();
+            } else {
+                window.addEventListener('load', initAOS);
+            }
+
+            // Mobile menu functionality with guards
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+                    mobileMenuButton.setAttribute('aria-expanded', String(!expanded));
+                });
+
+                // Close mobile menu when a link is clicked
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        mobileMenuButton.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+
+            // Menu tabs functionality
+            const menuTabs = document.querySelectorAll('.menu-tab');
+            const menuCategories = document.querySelectorAll('.menu-category');
+
+            if (menuTabs.length && menuCategories.length) {
+                menuTabs.forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        menuTabs.forEach(t => t.classList.remove('active'));
+                        tab.classList.add('active');
+
+                        menuCategories.forEach(category => category.classList.remove('active'));
+
+                        const categoryId = tab.getAttribute('data-category');
+                        const target = document.getElementById(categoryId);
+                        if (target) target.classList.add('active');
+                    });
+                });
+            }
+
+            // Carrusel functionality (guards to avoid errors when elements missing)
+            const heroSlides = document.querySelectorAll('.hero-slide');
+            const carouselDots = document.querySelectorAll('.carousel-dot');
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                if (!heroSlides.length || !carouselDots.length) return;
+                heroSlides.forEach(slide => slide.classList.remove('active'));
+                carouselDots.forEach(dot => dot.classList.remove('active'));
+
+                const safeIndex = Math.max(0, Math.min(index, heroSlides.length - 1));
+                heroSlides[safeIndex].classList.add('active');
+                carouselDots[safeIndex].classList.add('active');
+                currentSlide = safeIndex;
+            }
+
+            if (carouselDots.length && heroSlides.length) {
+                carouselDots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => showSlide(index));
+                });
+
+                if (heroSlides.length > 1) {
+                    setInterval(() => {
+                        const nextSlide = (currentSlide + 1) % heroSlides.length;
+                        showSlide(nextSlide);
+                    }, 5000);
+                }
+            }
+        })();
+    </script>
+
+</body>
+
+</html><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P55CJWSFWD"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-P55CJWSFWD');
+</script>
+<script
+    id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/5b43255e31e105aee4e653dfb/f801248f3cf3cdfbd47b9188e.js");</script>
