@@ -19,9 +19,16 @@
     <meta property="og:description"
         content="Descubre el auténtico sabor de nuestras pizzas artesanales, donde cada mordida refleja tradición y calidad, elaboradas con ingredientes frescos y recetas inspiradas en la pizza napolitana; ofrecemos pizza a domicilio y delivery de pizza rápido para quienes buscan pedir pizza a domicilio, una pizza cerca de mí o una pizza pronto, con opciones como pizza grande, pizza sin gluten, pizza 2x1 y atractiva oferta pizza, convirtiéndonos en una de las pizzerías favoritas de la ciudad frente a alternativas como Domino’s pizza cerca de mí o Pizza Hut promociones, gracias a nuestro estilo mamma mia pizzeria y el sabor único de nuestra hot pizza recién salida del horno. 🍕" "
      />
+    <link rel="canonical" href="https://web-nikos.onrender.com/" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://i.imgur.com/6YVbQKn.png">
+    <meta name="theme-color" content="#1a1a1a">
 
-     <link rel=" cononical" href="https://web-nikos.onrender.com/" />
-
+    <!-- Skip link for accessibility -->
+    <style>
+        .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+        .skip-link:focus{position:static;left:1rem;top:1rem;width:auto;height:auto;background:#111;color:#fff;padding:12px 16px;z-index:9999;border-radius:6px}
+    </style>
     <link rel="alternate" href="https://web-nikos.onrender.com/" hreflang="es-PE" />
     <script src="https://cdn.tailwindcss.com" defer></script>
 
@@ -52,21 +59,31 @@
             --dark: #0a0a0a;
         }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2a2a2a 100%);
             color: #ffffff;
             overflow-x: hidden;
+            line-height: 1.6;
         }
 
         .montserrat {
             font-family: 'Montserrat', sans-serif;
+            letter-spacing: 0.5px;
         }
 
+        /* ===== HERO SECTION ===== */
         .hero-bg {
             position: relative;
             height: 100vh;
             overflow: hidden;
+            margin-top: 80px;
         }
 
         .hero-slide {
@@ -78,7 +95,7 @@
             background-size: cover;
             background-position: center;
             opacity: 0;
-            transition: opacity 1.2s ease-in-out;
+            transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .hero-slide.active {
@@ -86,9 +103,10 @@
         }
 
         .hero-overlay {
-            background: linear-gradient(135deg, rgba(10, 10, 10, 0.85) 0%, rgba(26, 26, 26, 0.75) 100%);
+            background: linear-gradient(135deg, rgba(10, 10, 10, 0.88) 0%, rgba(26, 26, 26, 0.82) 100%);
         }
 
+        /* ===== SECTION PATTERNS ===== */
         .section-bg {
             position: relative;
             overflow: hidden;
@@ -96,32 +114,40 @@
 
         .section-pattern {
             background:
-                radial-gradient(circle at 20% 80%, rgba(251, 191, 36, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 40% 40%, rgba(254, 243, 199, 0.05) 0%, transparent 50%);
+                radial-gradient(circle at 20% 80%, rgba(251, 191, 36, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(220, 38, 38, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(254, 243, 199, 0.03) 0%, transparent 50%);
         }
 
+        /* ===== GLASS MORPHISM ===== */
         .glass-effect {
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
         }
 
+        /* ===== CARD HOVER EFFECTS ===== */
         .card-hover-effect {
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
 
         .card-hover-effect:hover {
-            transform: translateY(-12px);
-            box-shadow: 0 20px 40px rgba(251, 191, 36, 0.15);
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(251, 191, 36, 0.2);
         }
 
+        /* ===== HERO BUTTON ===== */
         .hero-button {
-            background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
-            box-shadow: 0 6px 20px rgba(251, 191, 36, 0.3);
+            background: linear-gradient(135deg, var(--secondary) 0%, #f59e0b 50%, var(--accent) 100%);
+            box-shadow: 0 8px 24px rgba(251, 191, 36, 0.4), 0 0 20px rgba(251, 191, 36, 0.2);
             position: relative;
             overflow: hidden;
+            border: none;
+            cursor: pointer;
+            font-weight: 700;
+            letter-spacing: 1px;
         }
 
         .hero-button::before {
@@ -131,8 +157,8 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-            transition: left 0.5s;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.6s ease-out;
         }
 
         .hero-button:hover::before {
@@ -140,72 +166,143 @@
         }
 
         .hero-button:hover {
-            box-shadow: 0 8px 25px rgba(251, 191, 36, 0.4);
+            box-shadow: 0 12px 32px rgba(251, 191, 36, 0.6), 0 0 30px rgba(251, 191, 36, 0.3);
+            transform: translateY(-2px);
         }
 
+        /* ===== TEXT EFFECTS ===== */
         .text-shadow-glow {
-            text-shadow: 0 0 20px rgba(251, 191, 36, 0.5);
+            text-shadow: 0 0 30px rgba(251, 191, 36, 0.6), 0 0 60px rgba(251, 191, 36, 0.3);
+            letter-spacing: 3px;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #dc2626 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 900;
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+        }
+
+        @keyframes glow-pulse {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 40px rgba(251, 191, 36, 0.6);
+            }
+        }
+
+        @keyframes slide-in-left {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slide-in-right {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
 
         .pizza-icon {
-            animation: float 3s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(0px) rotate(0deg);
-            }
-
-            50% {
-                transform: translateY(-15px) rotate(5deg);
-            }
-
-            100% {
-                transform: translateY(0px) rotate(0deg);
-            }
+            animation: float 3.5s ease-in-out infinite;
         }
 
         .pizza-slice {
             position: absolute;
-            opacity: 0.1;
+            opacity: 0.12;
             z-index: 1;
-            filter: drop-shadow(0 0 10px rgba(251, 191, 36, 0.3));
+            filter: drop-shadow(0 0 15px rgba(251, 191, 36, 0.25));
+            animation: float 8s ease-in-out infinite;
         }
 
         .floating-pizza-1 {
             top: 10%;
             left: 5%;
-            animation: float 6s ease-in-out infinite;
         }
 
         .floating-pizza-2 {
             top: 60%;
             right: 5%;
-            animation: float 7s ease-in-out infinite 1s;
+            animation-delay: 1s;
         }
 
         .floating-pizza-3 {
             bottom: 10%;
             left: 15%;
-            animation: float 5s ease-in-out infinite 0.5s;
+            animation-delay: 0.5s;
         }
 
+        .floating-element {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(251, 191, 36, 0.1) 0%, transparent 70%);
+            filter: blur(50px);
+            z-index: 0;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .floating-1 {
+            width: 400px;
+            height: 400px;
+            top: 5%;
+            right: 5%;
+        }
+
+        .floating-2 {
+            width: 300px;
+            height: 300px;
+            bottom: 15%;
+            left: 10%;
+            animation-delay: 2s;
+        }
+
+        .floating-3 {
+            width: 250px;
+            height: 250px;
+            top: 45%;
+            left: 5%;
+            animation-delay: -5s;
+        }
+
+        /* ===== PIZZA BADGE ===== */
         .pizza-badge {
             position: relative;
-            overflow: hidden;
         }
 
         .pizza-badge::before {
             content: '';
             position: absolute;
-            top: -10px;
-            right: -10px;
+            top: -8px;
+            right: -8px;
             width: 50px;
             height: 50px;
-            background: var(--accent);
+            background: linear-gradient(135deg, #dc2626, #b91c1c);
             transform: rotate(45deg);
-            z-index: 1;
-            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+            z-index: 10;
+            box-shadow: 0 6px 20px rgba(220, 38, 38, 0.5);
+            animation: glow-pulse 2s ease-in-out infinite;
         }
 
         .pizza-badge::after {
@@ -213,56 +310,74 @@
             position: absolute;
             top: 5px;
             right: 5px;
-            z-index: 2;
-            font-size: 14px;
+            z-index: 11;
+            font-size: 18px;
+            animation: float 2s ease-in-out infinite;
         }
 
+        /* ===== MENU TABS ===== */
         .menu-tabs {
             display: flex;
             justify-content: center;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
             flex-wrap: wrap;
+            gap: 1rem;
         }
 
         .menu-tab {
-            padding: 0.75rem 1.5rem;
-            margin: 0.5rem;
-            background: rgba(255, 255, 255, 0.1);
+            padding: 0.875rem 2rem;
+            background: rgba(255, 255, 255, 0.08);
             border-radius: 50px;
             cursor: pointer;
-            transition: all 0.3s ease;
-            border: 1px solid transparent;
-        }
-
-        .menu-tab.active {
-            background: var(--secondary);
-            color: var(--primary);
-            border-color: var(--secondary);
-            box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            border: 2px solid rgba(251, 191, 36, 0.3);
+            font-weight: 600;
+            font-size: 1rem;
         }
 
         .menu-tab:hover {
-            background: var(--accent);
-            color: white;
-            border-color: var(--accent);
+            background: rgba(251, 191, 36, 0.15);
+            border-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        .menu-tab.active {
+            background: linear-gradient(135deg, var(--secondary), #f59e0b);
+            color: var(--primary);
+            border-color: var(--secondary);
+            box-shadow: 0 8px 24px rgba(251, 191, 36, 0.4);
+            font-weight: 700;
         }
 
         .menu-category {
             display: none;
+            animation: fadeIn 0.6s ease-out;
         }
 
         .menu-category.active {
             display: grid;
         }
 
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===== CAROUSEL DOTS ===== */
         .carousel-dots {
             position: absolute;
-            bottom: 30px;
+            bottom: 40px;
             left: 0;
             right: 0;
             display: flex;
             justify-content: center;
-            gap: 12px;
+            gap: 15px;
             z-index: 20;
         }
 
@@ -270,72 +385,32 @@
             width: 14px;
             height: 14px;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.4);
+            background: rgba(255, 255, 255, 0.3);
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
             border: 2px solid transparent;
+        }
+
+        .carousel-dot:hover {
+            background: rgba(255, 255, 255, 0.6);
+            transform: scale(1.15);
         }
 
         .carousel-dot.active {
             background: var(--secondary);
-            transform: scale(1.3);
-            border-color: rgba(255, 255, 255, 0.5);
-            box-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
+            transform: scale(1.4);
+            border-color: rgba(255, 255, 255, 0.6);
+            box-shadow: 0 0 20px rgba(251, 191, 36, 0.7);
         }
 
-        .floating-element {
-            position: absolute;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(251, 191, 36, 0.1) 0%, transparent 70%);
-            filter: blur(40px);
-            z-index: 0;
-        }
-
-        .floating-1 {
-            width: 300px;
-            height: 300px;
-            top: 10%;
-            right: 10%;
-            animation: float 15s ease-in-out infinite;
-        }
-
-        .floating-2 {
-            width: 200px;
-            height: 200px;
-            bottom: 20%;
-            left: 5%;
-            animation: float 12s ease-in-out infinite reverse;
-        }
-
-        .floating-3 {
-            width: 150px;
-            height: 150px;
-            top: 50%;
-            left: 20%;
-            animation: float 10s ease-in-out infinite 2s;
-        }
-
-        .gradient-text {
-            background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .section-divider {
-            height: 3px;
-            background: linear-gradient(90deg, transparent 0%, var(--secondary) 50%, transparent 100%);
-            margin: 4rem auto;
-            width: 80%;
-            max-width: 400px;
-        }
-
+        /* ===== PIZZA CARD ===== */
         .pizza-card {
-            background: linear-gradient(135deg, rgba(26, 26, 26, 0.9) 0%, rgba(42, 42, 42, 0.9) 100%);
-            border-radius: 20px;
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.95) 0%, rgba(42, 42, 42, 0.95) 100%);
+            border-radius: 24px;
             overflow: hidden;
             position: relative;
-            border: 1px solid rgba(251, 191, 36, 0.2);
+            border: 1.5px solid rgba(251, 191, 36, 0.2);
+            backdrop-filter: blur(10px);
         }
 
         .pizza-card::before {
@@ -344,27 +419,31 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 4px;
+            height: 5px;
             background: linear-gradient(90deg, var(--secondary) 0%, var(--accent) 100%);
         }
 
+        /* ===== SOCIAL ICONS ===== */
         .social-icon {
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            border: 2px solid rgba(251, 191, 36, 0.3);
         }
 
         .social-icon:hover {
-            transform: translateY(-5px) scale(1.1);
+            transform: translateY(-8px) scale(1.15);
             border-color: var(--secondary);
-            box-shadow: 0 10px 20px rgba(251, 191, 36, 0.2);
+            box-shadow: 0 15px 30px rgba(251, 191, 36, 0.3);
+            background: rgba(251, 191, 36, 0.1) !important;
         }
 
+        /* ===== CONTACT CARD ===== */
         .contact-card {
-            background: linear-gradient(135deg, rgba(26, 26, 26, 0.8) 0%, rgba(42, 42, 42, 0.8) 100%);
-            border-radius: 16px;
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.9) 0%, rgba(42, 42, 42, 0.9) 100%);
+            border-radius: 20px;
             overflow: hidden;
             position: relative;
-            border: 1px solid rgba(251, 191, 36, 0.15);
+            border: 1.5px solid rgba(251, 191, 36, 0.15);
+            backdrop-filter: blur(10px);
         }
 
         .contact-card::before {
@@ -376,39 +455,46 @@
             height: 100%;
             background: linear-gradient(135deg, rgba(251, 191, 36, 0.05) 0%, transparent 50%);
             z-index: 0;
+            pointer-events: none;
         }
 
+        .contact-card > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ===== PULSE ANIMATION ===== */
         .pulse-dot {
             width: 10px;
             height: 10px;
             border-radius: 50%;
             background: #10b981;
-            animation: pulse 2s infinite;
+            animation: pulse 2s ease-out infinite;
         }
 
         @keyframes pulse {
             0% {
-                transform: scale(0.95);
-                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+                transform: scale(0.9);
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.8);
             }
-
             70% {
                 transform: scale(1);
-                box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+                box-shadow: 0 0 0 12px rgba(16, 185, 129, 0);
             }
-
             100% {
-                transform: scale(0.95);
+                transform: scale(0.9);
                 box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
             }
         }
 
+        /* ===== HOURS CARD ===== */
         .hours-card {
-            background: linear-gradient(135deg, rgba(26, 26, 26, 0.8) 0%, rgba(42, 42, 42, 0.8) 100%);
-            border-radius: 20px;
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.9) 0%, rgba(42, 42, 42, 0.9) 100%);
+            border-radius: 24px;
             overflow: hidden;
             position: relative;
-            border: 1px solid rgba(251, 191, 36, 0.2);
+            border: 1.5px solid rgba(251, 191, 36, 0.2);
+            backdrop-filter: blur(10px);
         }
 
         .hours-card::before {
@@ -417,9 +503,63 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 4px;
+            height: 5px;
             background: linear-gradient(90deg, var(--secondary) 0%, var(--accent) 100%);
         }
+
+        /* ===== SECTION DIVIDER ===== */
+        .section-divider {
+            height: 3px;
+            background: linear-gradient(90deg, transparent 0%, var(--secondary) 25%, var(--secondary) 75%, transparent 100%);
+            margin: 4rem auto;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 2px;
+            box-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .hero-bg {
+                margin-top: 70px;
+            }
+
+            .text-shadow-glow {
+                text-shadow: 0 0 20px rgba(251, 191, 36, 0.4);
+                letter-spacing: 2px;
+            }
+
+            .menu-tabs {
+                margin-bottom: 2rem;
+                gap: 0.75rem;
+            }
+
+            .menu-tab {
+                padding: 0.75rem 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            .card-hover-effect:hover {
+                transform: translateY(-10px) scale(1.01);
+            }
+        }
+        /* ===== HERO DECORATION ===== */
+        .hero-deco {
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            right: -40px;
+            top: -40px;
+            z-index: 15;
+            opacity: 0.14;
+            pointer-events: none;
+            filter: blur(18px);
+            transform: rotate(-12deg);
+            transition: transform 0.8s ease;
+        }
+
+        .hero-deco .pulse { animation: float 18s ease-in-out infinite; }
+        .hero-deco:hover { transform: rotate(-8deg) scale(1.02); opacity: 0.18 }
     </style>
     <script
         id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/5b43255e31e105aee4e653dfb/f801248f3cf3cdfbd47b9188e.js");</script>
@@ -429,86 +569,87 @@
 
     <!-- Header & Nav -->
     <header
-        class="bg-black/90 backdrop-blur-md fixed w-full top-0 z-50 transition-all duration-300 shadow-lg shadow-yellow-900/20 border-b border-yellow-900/20">
-        <div class="container mx-auto flex justify-between items-center p-4">
-            <div class="flex items-center">
+        class="bg-black/95 backdrop-blur-xl fixed w-full top-0 z-50 transition-all duration-400 shadow-2xl shadow-yellow-900/10 border-b border-yellow-900/20">
+        <div class="container mx-auto flex justify-between items-center p-4 md:p-5">
+            <!-- Logo & Brand -->
+            <div class="flex items-center gap-3">
                 <div class="relative">
                     <img src="imagenes/logoNikos.png" alt="Logo Niko's Pizza"
-                        class="h-16 w-16 rounded-full transition-transform duration-300 hover:scale-110 hover:rotate-6 border-2 border-yellow-500/30">
+                        class="h-14 w-14 md:h-16 md:w-16 rounded-full transition-all duration-400 hover:scale-110 hover:-rotate-6 border-2 border-yellow-500/40 hover:border-yellow-400">
                     <div
-                        class="absolute -top-1 -right-1 w-6 h-6 bg-gradient-to-br from-yellow-500 to-red-500 rounded-full flex items-center justify-center shadow-lg">
+                        class="absolute -top-1 -right-1 w-5 h-5 bg-gradient-to-br from-yellow-400 to-red-500 rounded-full flex items-center justify-center shadow-lg shadow-yellow-400/50 animate-pulse">
                         <span class="text-xs font-bold">🔥</span>
                     </div>
                 </div>
-                <span class="text-2xl font-black montserrat tracking-wider ml-3 gradient-text">
-                    NIKO'S PIZZA
-                </span>
+                <div class="hidden sm:block">
+                    <span class="text-xl md:text-2xl font-black montserrat tracking-wider gradient-text">
+                        NIKO'S
+                    </span>
+                    <p class="text-xs md:text-sm text-yellow-300 font-semibold">PIZZA AUTÉNTICA</p>
+                </div>
             </div>
 
-            <nav class="hidden md:flex space-x-8">
+            <!-- Navigation Menu - Desktop -->
+            <nav class="hidden lg:flex items-center space-x-1">
                 <a href="#inicio"
-                    class="hover:text-yellow-400 transition-all duration-300 font-semibold relative group py-2">
+                    class="px-4 py-2 hover:text-yellow-300 transition-all duration-300 font-semibold relative group text-sm xl:text-base">
                     Inicio
                     <span
-                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-500 to-red-500 transition-all duration-300 group-hover:w-full"></span>
+                        class="absolute bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-red-500 transition-all duration-300 group-hover:w-full rounded-full"></span>
                 </a>
                 <a href="#quienes-somos"
-                    class="hover:text-yellow-400 transition-all duration-300 font-semibold relative group py-2">
+                    class="px-4 py-2 hover:text-yellow-300 transition-all duration-300 font-semibold relative group text-sm xl:text-base">
                     Quiénes Somos
                     <span
-                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-500 to-red-500 transition-all duration-300 group-hover:w-full"></span>
+                        class="absolute bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-red-500 transition-all duration-300 group-hover:w-full rounded-full"></span>
                 </a>
                 <a href="#menu"
-                    class="hover:text-yellow-400 transition-all duration-300 font-semibold relative group py-2">
+                    class="px-4 py-2 hover:text-yellow-300 transition-all duration-300 font-semibold relative group text-sm xl:text-base">
                     Menú
                     <span
-                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-500 to-red-500 transition-all duration-300 group-hover:w-full"></span>
+                        class="absolute bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-red-500 transition-all duration-300 group-hover:w-full rounded-full"></span>
                 </a>
-<<<<<<< HEAD
                 <a href="#testimonios"
-                    class="hover:text-yellow-400 transition-all duration-300 font-semibold relative group py-2">
+                    class="px-4 py-2 hover:text-yellow-300 transition-all duration-300 font-semibold relative group text-sm xl:text-base">
                     Testimonios
                     <span
-                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-500 to-red-500 transition-all duration-300 group-hover:w-full"></span>
+                        class="absolute bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-red-500 transition-all duration-300 group-hover:w-full rounded-full"></span>
                 </a>
-=======
->>>>>>> a25883149f323b9da2e6ae95da0a03a397302856
                 <a href="#horarios"
-                    class="hover:text-yellow-400 transition-all duration-300 font-semibold relative group py-2">
+                    class="px-4 py-2 hover:text-yellow-300 transition-all duration-300 font-semibold relative group text-sm xl:text-base">
                     Horarios
                     <span
-                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-500 to-red-500 transition-all duration-300 group-hover:w-full"></span>
+                        class="absolute bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-red-500 transition-all duration-300 group-hover:w-full rounded-full"></span>
                 </a>
                 <a href="#contactos"
-                    class="hover:text-yellow-400 transition-all duration-300 font-semibold relative group py-2">
-                    Contactos
+                    class="px-4 py-2 hover:text-yellow-300 transition-all duration-300 font-semibold relative group text-sm xl:text-base">
+                    Contacto
                     <span
-                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-500 to-red-500 transition-all duration-300 group-hover:w-full"></span>
+                        class="absolute bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-red-500 transition-all duration-300 group-hover:w-full rounded-full"></span>
                 </a>
             </nav>
-            <button id="mobile-menu-button" class="md:hidden text-2xl focus:outline-none text-yellow-500"
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="lg:hidden text-2xl focus:outline-none text-yellow-400 hover:text-yellow-300 transition-colors duration-300"
                 aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menú móvil">
                 <i class="fas fa-bars" aria-hidden="true"></i>
             </button>
         </div>
+
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-black/95 backdrop-blur-lg border-t border-yellow-900/20">
+        <div id="mobile-menu" class="hidden lg:hidden bg-black/98 backdrop-blur-2xl border-t border-yellow-900/30">
             <a href="#inicio"
-                class="block text-center py-4 hover:bg-yellow-900/20 hover:text-yellow-400 transition-all duration-300 border-b border-yellow-900/10">Inicio</a>
+                class="block text-center py-4 hover:bg-yellow-900/20 hover:text-yellow-300 transition-all duration-300 border-b border-yellow-900/10 font-semibold">Inicio</a>
             <a href="#quienes-somos"
-                class="block text-center py-4 hover:bg-yellow-900/20 hover:text-yellow-400 transition-all duration-300 border-b border-yellow-900/10">Quiénes
-                Somos</a>
+                class="block text-center py-4 hover:bg-yellow-900/20 hover:text-yellow-300 transition-all duration-300 border-b border-yellow-900/10 font-semibold">Quiénes Somos</a>
             <a href="#menu"
-                class="block text-center py-4 hover:bg-yellow-900/20 hover:text-yellow-400 transition-all duration-300 border-b border-yellow-900/10">Menú</a>
-<<<<<<< HEAD
+                class="block text-center py-4 hover:bg-yellow-900/20 hover:text-yellow-300 transition-all duration-300 border-b border-yellow-900/10 font-semibold">Menú</a>
             <a href="#testimonios"
-                class="block text-center py-4 hover:bg-yellow-900/20 hover:text-yellow-400 transition-all duration-300 border-b border-yellow-900/10">Testimonios</a>
-=======
->>>>>>> a25883149f323b9da2e6ae95da0a03a397302856
+                class="block text-center py-4 hover:bg-yellow-900/20 hover:text-yellow-300 transition-all duration-300 border-b border-yellow-900/10 font-semibold">Testimonios</a>
             <a href="#horarios"
-                class="block text-center py-4 hover:bg-yellow-900/20 hover:text-yellow-400 transition-all duration-300 border-b border-yellow-900/10">Horarios</a>
+                class="block text-center py-4 hover:bg-yellow-900/20 hover:text-yellow-300 transition-all duration-300 border-b border-yellow-900/10 font-semibold">Horarios</a>
             <a href="#contactos"
-                class="block text-center py-4 hover:bg-yellow-900/20 hover:text-yellow-400 transition-all duration-300">Contactos</a>
+                class="block text-center py-4 hover:bg-yellow-900/20 hover:text-yellow-300 transition-all duration-300 font-semibold">Contacto</a>
         </div>
     </header>
 
@@ -542,22 +683,34 @@
             <div class="pizza-slice floating-pizza-2 text-8xl z-10">🍕</div>
             <div class="pizza-slice floating-pizza-3 text-5xl z-10">🍕</div>
 
-            <div data-aos="zoom-in" data-aos-duration="1000" class="relative z-20 px-4">
-                <h1 class="text-5xl md:text-8xl font-black montserrat uppercase tracking-wider text-shadow-glow mb-6">
-                    NIKO'S PIZZA
+            <div data-aos="zoom-in" data-aos-duration="1200" class="relative z-20 px-4 md:px-8 max-w-4xl">
+                <!-- SVG decorative blob (subtle, animated) -->
+                <svg class="hero-deco" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="g1" x1="0%" x2="100%" y1="0%" y2="100%">
+                            <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.95" />
+                            <stop offset="100%" stop-color="#dc2626" stop-opacity="0.95" />
+                        </linearGradient>
+                    </defs>
+                    <g class="pulse">
+                        <path fill="url(#g1)" d="M421.1,316.3C413,362,360,406,312.6,421.7c-47.3,15.4-92-3.2-138.2-23.6C111,370,72.2,343.5,55.1,300.9  c-17-43,4.6-93.8,35.8-128.3C146.3,104.7,194.4,87.9,241.9,104c47.6,16.2,87.5,67.9,129.2,106.3C400.9,246.2,427.7,270.6,421.1,316.3z">
+                            <animate attributeName="d" dur="12s" repeatCount="indefinite" values="M421.1,316.3C413,362,360,406,312.6,421.7c-47.3,15.4-92-3.2-138.2-23.6C111,370,72.2,343.5,55.1,300.9  c-17-43,4.6-93.8,35.8-128.3C146.3,104.7,194.4,87.9,241.9,104c47.6,16.2,87.5,67.9,129.2,106.3C400.9,246.2,427.7,270.6,421.1,316.3z;M430.1,320.3C418,368,361,412,310.6,423.7c-50.3,11.4-98-14.2-142.2-34.6C104,357,68.2,332.5,55.1,295.9  c-13-36,6.6-84.8,38.8-118.3C154.3,96.7,198.4,84.9,249.9,99c51.6,14.2,95.5,62.9,140.2,100.3C416.9,234.2,444.7,268.6,430.1,320.3z;M421.1,316.3C413,362,360,406,312.6,421.7c-47.3,15.4-92-3.2-138.2-23.6C111,370,72.2,343.5,55.1,300.9  c-17-43,4.6-93.8,35.8-128.3C146.3,104.7,194.4,87.9,241.9,104c47.6,16.2,87.5,67.9,129.2,106.3C400.9,246.2,427.7,270.6,421.1,316.3z"/>
+                        </path>
+                    </g>
+                </svg>
+                <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black montserrat uppercase tracking-wider text-shadow-glow mb-4 md:mb-8 leading-tight">
+                    NIKO'S<br><span class="text-yellow-400">PIZZA</span>
                 </h1>
-                <p class="text-xl md:text-2xl mt-4 text-yellow-100 font-light max-w-2xl mx-auto mb-8">Descubre el
-                    auténtico
-                    sabor de las pizzas artesanales que su gran sabor se siente en cada mordida. Hechas con ingredientes
-                    frescos y amor por la tradición.</p>
-                <div class="mt-8 flex flex-col md:flex-row justify-center gap-6">
-                    <a href="#menu"
-                        class="inline-block text-black font-bold py-4 px-10 rounded-full uppercase tracking-wider transition-all duration-300 transform hover:scale-105 hero-button text-lg">
-                        Ver Menú
+                <div class="h-2 w-24 bg-gradient-to-r from-yellow-400 to-red-500 rounded-full mb-6 md:mb-8"></div>
+                <p class="text-lg md:text-2xl mt-6 text-yellow-100 font-light max-w-2xl mb-10 leading-relaxed">
+                    Descubre el auténtico sabor de pizzas artesanales hechas con ingredientes premium y recetas inspiradas en la tradición italiana. <span class="font-semibold text-yellow-300">Cada mordida es un viaje a Italia.</span>
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row justify-start gap-5">
+                    <a href="#menu" class="inline-block text-black font-bold py-4 px-10 rounded-full uppercase tracking-wider transition-all duration-400 transform hover:scale-105 active:scale-95 hero-button text-base md:text-lg shadow-2xl">
+                        <i class="fas fa-fire mr-2"></i>Ver Menú
                     </a>
-                    <a href="#contactos"
-                        class="inline-block bg-transparent border-2 border-yellow-500 text-white font-bold py-4 px-10 rounded-full uppercase tracking-wider transition-all duration-300 transform hover:scale-105 hover:bg-yellow-500 hover:text-black">
-                        Pedir Ahora
+                    <a href="#contactos" class="inline-block bg-transparent border-2 border-yellow-400 text-white font-bold py-4 px-10 rounded-full uppercase tracking-wider transition-all duration-400 transform hover:scale-105 hover:bg-yellow-500 hover:text-black active:scale-95 text-base md:text-lg">
+                        <i class="fas fa-shopping-cart mr-2"></i>Pedir Ahora
                     </a>
                 </div>
             </div>
@@ -576,11 +729,17 @@
         </section>
 
         <!-- Quienes Somos Section -->
-        <section id="quienes-somos" class="section-bg section-pattern py-24 relative">
+        <section id="quienes-somos" class="section-bg section-pattern py-24 md:py-32 relative">
             <div class="container mx-auto px-6">
-                <h2 class="text-4xl md:text-5xl font-black montserrat mb-8 text-center gradient-text"
-                    data-aos="fade-up">Nuestra Pasión
-                    por la Pizza</h2>
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl md:text-6xl font-black montserrat mb-6 gradient-text">
+                        Nuestra Pasión
+                    </h2>
+                    <div class="h-1 w-20 bg-gradient-to-r from-yellow-400 to-red-500 rounded-full mx-auto mb-6"></div>
+                    <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+                        Tres años de dedicación, calidad premium y amor por la gastronomía italiana
+                    </p>
+                </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div data-aos="fade-right">
@@ -645,15 +804,17 @@
         </section>
 
         <!-- Menu Section -->
-        <section id="menu" class="section-bg section-pattern py-24 relative">
+        <section id="menu" class="section-bg section-pattern py-24 md:py-32 relative">
             <div class="container mx-auto px-6">
-                <h2 class="text-4xl md:text-5xl font-black montserrat text-center mb-4 gradient-text"
-                    data-aos="fade-up">
-                    Nuestro Menú Estrella
-                </h2>
-                <p class="text-xl text-center mb-12 max-w-2xl mx-auto text-gray-300" data-aos="fade-up"
-                    data-aos-delay="100">Descubre nuestras especialidades, creadas para satisfacer todos los paladares
-                </p>
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl md:text-6xl font-black montserrat mb-6 gradient-text">
+                        Nuestro Menú Estrella
+                    </h2>
+                    <div class="h-1 w-20 bg-gradient-to-r from-yellow-400 to-red-500 rounded-full mx-auto mb-6"></div>
+                    <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+                        Especialidades seleccionadas cuidadosamente para satisfacer todos los paladares
+                    </p>
+                </div>
 
                 <div class="menu-tabs" data-aos="fade-up" data-aos-delay="200">
                     <div class="menu-tab active" data-category="pizzas">Pizzas</div>
@@ -904,17 +1065,16 @@
             </div>
         </section>
 
-<<<<<<< HEAD
         <!-- Testimonios Section -->
-        <section id="testimonios" class="section-bg section-pattern py-24 relative">
+        <section id="testimonios" class="section-bg section-pattern py-24 md:py-32 relative">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16" data-aos="fade-up">
-                    <h2 class="text-4xl md:text-5xl font-black montserrat text-center mb-4 gradient-text">
-                        Lo que Dicen Nuestros Clientes
+                    <h2 class="text-4xl md:text-6xl font-black montserrat mb-6 gradient-text">
+                        Lo Que Dicen Nuestros Clientes
                     </h2>
-                    <p class="text-xl text-center max-w-2xl mx-auto text-gray-300" data-aos="fade-up"
-                        data-aos-delay="100">
-                        Miles de clientes satisfechos disfrutan de nuestras deliciosas pizzas cada día
+                    <div class="h-1 w-20 bg-gradient-to-r from-yellow-400 to-red-500 rounded-full mx-auto mb-6"></div>
+                    <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+                        Miles de clientes satisfechos disfrutan de nuestras pizzas todos los días
                     </p>
                 </div>
 
@@ -1105,14 +1265,15 @@
             </div>
         </section>
 
-=======
->>>>>>> a25883149f323b9da2e6ae95da0a03a397302856
         <!-- Horarios Section -->
-        <section id="horarios" class="section-bg section-pattern py-24 relative">
+        <section id="horarios" class="section-bg section-pattern py-24 md:py-32 relative">
             <div class="container mx-auto px-6">
-                <h2 class="text-4xl md:text-5xl font-black montserrat text-center mb-8 gradient-text"
-                    data-aos="fade-up">Horarios de
-                    Atención</h2>
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl md:text-6xl font-black montserrat mb-6 gradient-text">
+                        Horarios de Atención
+                    </h2>
+                    <div class="h-1 w-20 bg-gradient-to-r from-yellow-400 to-red-500 rounded-full mx-auto"></div>
+                </div>
 
                 <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div data-aos="fade-right">
@@ -1167,11 +1328,17 @@
         </section>
 
         <!-- Contactos Section -->
-        <section id="contactos" class="section-bg section-pattern py-24 relative">
+        <section id="contactos" class="section-bg section-pattern py-24 md:py-32 relative">
             <div class="container mx-auto px-6">
-                <h2 class="text-4xl md:text-5xl font-black montserrat text-center mb-16 gradient-text"
-                    data-aos="fade-up">Ponte en
-                    Contacto</h2>
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl md:text-6xl font-black montserrat mb-6 gradient-text">
+                        Ponte en Contacto
+                    </h2>
+                    <div class="h-1 w-20 bg-gradient-to-r from-yellow-400 to-red-500 rounded-full mx-auto mb-6"></div>
+                    <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+                        Estamos listos para servirte con la mejor atención
+                    </p>
+                </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     <div data-aos="fade-right">
@@ -1339,11 +1506,8 @@
                         </li>
                         <li><a href="#menu"
                                 class="text-gray-400 hover:text-yellow-400 transition-colors duration-300">Menú</a></li>
-<<<<<<< HEAD
                         <li><a href="#testimonios"
                                 class="text-gray-400 hover:text-yellow-400 transition-colors duration-300">Testimonios</a></li>
-=======
->>>>>>> a25883149f323b9da2e6ae95da0a03a397302856
                         <li><a href="#horarios"
                                 class="text-gray-400 hover:text-yellow-400 transition-colors duration-300">Horarios</a>
                         </li>
@@ -1383,7 +1547,7 @@
             </div>
 
             <div class="border-t border-yellow-900/20 mt-8 pt-8 text-center text-gray-500">
-                <p>&copy; 2025 Niko's Pizza. Todos los derechos reservados. Diseñado con ❤️ y 🍕.</p>
+                <p>&copy; 2026 Niko's Pizza. Todos los derechos reservados. Diseñado con ❤️ y 🍕.</p>
             </div>
         </div>
     </footer>
@@ -1475,16 +1639,6 @@
         })();
     </script>
 
-</body>
+    </body>
 
-</html><!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P55CJWSFWD"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-P55CJWSFWD');
-</script>
-<script
-    id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/5b43255e31e105aee4e653dfb/f801248f3cf3cdfbd47b9188e.js");</script>
+</html>
