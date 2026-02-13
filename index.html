@@ -1639,6 +1639,118 @@
         })();
     </script>
 
+    <!-- Sección de Recetas (rediseñada) -->
+    <section id="recetas" class="section-bg py-16">
+        <style>
+            .recipes-grid { display:grid; gap:2rem; grid-template-columns:1fr; }
+            @media(min-width:768px){ .recipes-grid{ grid-template-columns:repeat(2,1fr); } }
+            .recipe-card{ display:flex; flex-direction:column; background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02)); border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.6); transition:transform .35s ease, box-shadow .35s ease; }
+            .recipe-card:hover{ transform:translateY(-10px); box-shadow:0 30px 60px rgba(0,0,0,0.7); }
+            .recipe-media{ position:relative; height:220px; overflow:hidden; }
+            .recipe-media img{ width:100%; height:100%; object-fit:cover; display:block; }
+            .recipe-badge{ position:absolute; left:12px; top:12px; background:linear-gradient(90deg,var(--accent),#b91c1c); color:white; padding:6px 10px; border-radius:999px; font-weight:700; box-shadow:0 6px 18px rgba(220,38,38,0.3); }
+            .recipe-content{ padding:1.25rem; display:flex; flex-direction:column; gap:0.75rem; }
+            .meta-row{ display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center; }
+            .chip{ background:rgba(255,255,255,0.04); padding:6px 10px; border-radius:999px; font-size:.9rem; color:var(--light); border:1px solid rgba(255,255,255,0.06); }
+            details summary{ cursor:pointer; list-style:none; }
+            details[open] summary::after{ content:" ▲"; }
+            details summary::after{ content:" ▼"; margin-left:6px; }
+            .recipe-footer{ margin-top:auto; display:flex; gap:0.75rem; align-items:center; }
+            .btn-recipe{ background:linear-gradient(90deg,var(--secondary),#f59e0b); color:var(--primary); padding:.6rem .9rem; border-radius:10px; font-weight:700; box-shadow:0 8px 20px rgba(251,191,36,0.2); }
+        </style>
+
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-8">
+                <h2 class="text-4xl montserrat gradient-text">Recetas</h2>
+                <p class="text-gray-200 mt-2">Recrea en casa nuestras pizzas más queridas. Fácil, rápido y delicioso.</p>
+            </div>
+
+            <div class="recipes-grid">
+                <!-- Hawaiana -->
+                <article class="recipe-card glass-effect" aria-labelledby="hawaiana-title">
+                    <div class="recipe-media">
+                        <span class="recipe-badge">Hawaiana</span>
+                        <img src="imagenes/hawaina.png" alt="Pizza Hawaiana" loading="lazy">
+                    </div>
+                    <div class="recipe-content">
+                        <h3 id="hawaiana-title" class="text-2xl montserrat">Pizza Hawaiana</h3>
+                        <div class="meta-row">
+                            <span class="chip"><i class="fa-regular fa-clock mr-2"></i> 20 min</span>
+                            <span class="chip"><i class="fa-solid fa-user-group mr-2"></i> 2-3 porciones</span>
+                            <span class="chip"><i class="fa-solid fa-leaf mr-2"></i> Fácil</span>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold">Ingredientes clave</h4>
+                            <ul class="list-inside list-disc text-sm text-gray-200">
+                                <li>Masa para pizza</li>
+                                <li>Salsa de tomate</li>
+                                <li>Queso mozzarella</li>
+                                <li>Jamón y piña en trozos</li>
+                            </ul>
+                        </div>
+
+                        <details class="mt-2" aria-labelledby="hawaiana-title">
+                            <summary class="montserrat font-semibold">Ver preparación</summary>
+                            <ol class="list-decimal list-inside mt-2 text-sm text-gray-200">
+                                <li>Precalienta el horno a 250°C con piedra o bandeja dentro.</li>
+                                <li>Extiende la masa, coloca la salsa y el queso.</li>
+                                <li>Añade jamón y piña; espolvorea orégano.</li>
+                                <li>Hornea 8–12 minutos hasta dorar y servir.</li>
+                            </ol>
+                        </details>
+
+                        <div class="recipe-footer">
+                            <a class="btn-recipe" href="#">Probar ahora</a>
+                            <span class="text-sm text-gray-300">Consejo: usa piña fresca para mejor textura.</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Americana -->
+                <article class="recipe-card glass-effect" aria-labelledby="americana-title">
+                    <div class="recipe-media">
+                        <span class="recipe-badge" style="background:linear-gradient(90deg,#f59e0b,#dc2626)">Americana</span>
+                        <img src="imagenes/pizza.jpg" alt="Pizza Americana" loading="lazy">
+                    </div>
+                    <div class="recipe-content">
+                        <h3 id="americana-title" class="text-2xl montserrat">Pizza Americana</h3>
+                        <div class="meta-row">
+                            <span class="chip"><i class="fa-regular fa-clock mr-2"></i> 25 min</span>
+                            <span class="chip"><i class="fa-solid fa-user-group mr-2"></i> 3-4 porciones</span>
+                            <span class="chip"><i class="fa-solid fa-pepper-hot mr-2"></i> Media</span>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold">Ingredientes clave</h4>
+                            <ul class="list-inside list-disc text-sm text-gray-200">
+                                <li>Masa (base mediana/gruesa)</li>
+                                <li>Salsa marinara</li>
+                                <li>Queso mozzarella y pepperoni</li>
+                                <li>Pimiento y cebolla</li>
+                            </ul>
+                        </div>
+
+                        <details class="mt-2" aria-labelledby="americana-title">
+                            <summary class="montserrat font-semibold">Ver preparación</summary>
+                            <ol class="list-decimal list-inside mt-2 text-sm text-gray-200">
+                                <li>Precalienta el horno a 240–250°C con piedra o bandeja dentro.</li>
+                                <li>Extiende la masa y agrega salsa y queso.</li>
+                                <li>Coloca pepperoni, pimiento y cebolla.</li>
+                                <li>Hornea 10–14 minutos hasta dorar y sirve caliente.</li>
+                            </ol>
+                        </details>
+
+                        <div class="recipe-footer">
+                            <a class="btn-recipe" href="#">Probar ahora</a>
+                            <span class="text-sm text-gray-300">Consejo: añade pepperoni extra al final.</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     </body>
 
 </html>
